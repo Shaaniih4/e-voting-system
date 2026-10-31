@@ -1,0 +1,845 @@
+{
+  "users": [
+    {
+      "id": "user-admin-1",
+      "name": "Dr. Arthur Sterling",
+      "email": "admin@campus.edu",
+      "passwordHash": "$2b$10$vSh2jAh8vYI/r4PHnsgVOeVBLPCkL/DBFxhZOa5myaS1uCkjrky9K",
+      "studentId": "FAC-8092",
+      "department": "Dean of Student Affairs",
+      "semester": 0,
+      "role": "ADMIN",
+      "accountStatus": "ACTIVE",
+      "emailVerifiedAt": "2026-10-31T06:57:33.570Z",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-31T06:57:33.570Z"
+    },
+    {
+      "id": "user-student-1",
+      "name": "Alex Rivera",
+      "email": "student@campus.edu",
+      "passwordHash": "$2b$10$q3RN6NkgL93AN4pD7OGtvOzqBTuxVHp6HR3eXWUlwB7adIu7K73YG",
+      "studentId": "CS2023-0142",
+      "department": "Computer Science & Engineering",
+      "semester": 6,
+      "role": "VOTER",
+      "accountStatus": "ACTIVE",
+      "emailVerifiedAt": "2026-10-01T06:57:33.570Z",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "user-student-2",
+      "name": "John Doe",
+      "email": "john.doe@campus.edu",
+      "passwordHash": "$2b$10$q3RN6NkgL93AN4pD7OGtvOzqBTuxVHp6HR3eXWUlwB7adIu7K73YG",
+      "studentId": "ECE2023-0881",
+      "department": "Electronics & Communication",
+      "semester": 6,
+      "role": "VOTER",
+      "accountStatus": "ACTIVE",
+      "emailVerifiedAt": "2026-10-01T06:57:33.570Z",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "user-student-3",
+      "name": "Liam Neely",
+      "email": "freshman@campus.edu",
+      "passwordHash": "$2b$10$q3RN6NkgL93AN4pD7OGtvOzqBTuxVHp6HR3eXWUlwB7adIu7K73YG",
+      "studentId": "ME2026-0012",
+      "department": "Mechanical Engineering",
+      "semester": 1,
+      "role": "VOTER",
+      "accountStatus": "PENDING_VERIFICATION",
+      "emailVerifiedAt": null,
+      "createdAt": "2026-10-31T06:57:33.570Z",
+      "updatedAt": "2026-10-31T06:57:33.570Z"
+    },
+    {
+      "id": "user-auditor-1",
+      "name": "Professor Janet O’Connor",
+      "email": "auditor@campus.edu",
+      "passwordHash": "$2b$10$6Ng33SQTdKRejyKwNuzdHeBqgDw6nST9DhF5Oz/yg.XYPTdgBJtcm",
+      "studentId": "AUD-3004",
+      "department": "Ethics & Governance Board",
+      "semester": 0,
+      "role": "AUDITOR",
+      "accountStatus": "ACTIVE",
+      "emailVerifiedAt": "2026-10-01T06:57:33.570Z",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "user-cand-1",
+      "name": "Elena Vance",
+      "email": "elena.vance@campus.edu",
+      "passwordHash": "$2b$10$kzueAW3EDYZ.Dw3D4BskQuk0TiEha9K61IdfZbgcPwuCUEnS8zavq",
+      "studentId": "CS2023-0019",
+      "department": "Computer Science & Engineering",
+      "semester": 6,
+      "role": "CANDIDATE",
+      "accountStatus": "ACTIVE",
+      "emailVerifiedAt": "2026-10-01T06:57:33.570Z",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "user-cand-2",
+      "name": "Marcus Chen",
+      "email": "marcus.chen@campus.edu",
+      "passwordHash": "$2b$10$kzueAW3EDYZ.Dw3D4BskQuk0TiEha9K61IdfZbgcPwuCUEnS8zavq",
+      "studentId": "EC2022-0450",
+      "department": "Electronics & Communication",
+      "semester": 8,
+      "role": "CANDIDATE",
+      "accountStatus": "ACTIVE",
+      "emailVerifiedAt": "2026-10-01T06:57:33.570Z",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    }
+  ],
+  "elections": [
+    {
+      "id": "elec-csu-2026",
+      "title": "College Student Union Election 2026",
+      "description": "Annual election for the executive officers of the Campus Student Union. Shape the academic policies, campus facilities, and student advocacy for 2026-2027.",
+      "academicYear": "2026-2027",
+      "startTime": "2026-10-29T06:57:33.571Z",
+      "endTime": "2026-11-03T06:57:33.571Z",
+      "status": "ACTIVE",
+      "createdBy": "user-admin-1",
+      "positions": [
+        {
+          "id": "pos-pres",
+          "title": "President",
+          "maxSelections": 1,
+          "description": "Chief executive officer representing all undergraduate and graduate student interests to the University Board."
+        },
+        {
+          "id": "pos-vp",
+          "title": "Vice President",
+          "maxSelections": 1,
+          "description": "Oversees student clubs, societies, academic advisory council, and student grievance resolutions."
+        },
+        {
+          "id": "pos-gs",
+          "title": "General Secretary",
+          "maxSelections": 1,
+          "description": "Manages administrative communications, budget allocation oversight, and union general body sessions."
+        },
+        {
+          "id": "pos-cs",
+          "title": "Cultural Secretary",
+          "maxSelections": 1,
+          "description": "Coordinates annual cultural fest, music/drama societies, and collegiate arts festivals."
+        }
+      ],
+      "eligibleDepartments": [],
+      "publishedAt": null,
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-31T06:57:33.570Z"
+    },
+    {
+      "id": "elec-drc-2025",
+      "title": "Department Representatives Council 2025",
+      "description": "College-wide election for department delegates to the Academic Senate. Official results certified by the Election Commission.",
+      "academicYear": "2025-2026",
+      "startTime": "2026-09-01T06:57:33.575Z",
+      "endTime": "2026-09-03T06:57:33.575Z",
+      "status": "PUBLISHED",
+      "createdBy": "user-admin-1",
+      "positions": [
+        {
+          "id": "pos-sen-eng",
+          "title": "Engineering Academic Delegate",
+          "maxSelections": 1,
+          "description": "Represents all Engineering disciplines in Senate curriculum reviews."
+        },
+        {
+          "id": "pos-sen-sci",
+          "title": "Sciences & Humanities Delegate",
+          "maxSelections": 1,
+          "description": "Represents Sciences and Arts departments in academic councils."
+        }
+      ],
+      "eligibleDepartments": [],
+      "publishedAt": "2026-09-04T06:57:33.575Z",
+      "createdAt": "2026-08-27T06:57:33.575Z",
+      "updatedAt": "2026-09-04T06:57:33.575Z"
+    },
+    {
+      "id": "elec-sports-2026",
+      "title": "Sports Advisory Board Election 2026",
+      "description": "Election of student captains and athletics delegates to oversee college sports facilities, gym renovations, and inter-collegiate tournaments.",
+      "academicYear": "2026-2027",
+      "startTime": "2026-11-05T06:57:33.585Z",
+      "endTime": "2026-11-09T06:57:33.585Z",
+      "status": "SCHEDULED",
+      "createdBy": "user-admin-1",
+      "positions": [
+        {
+          "id": "pos-sp-cap",
+          "title": "Athletics Committee Chair",
+          "maxSelections": 1
+        },
+        {
+          "id": "pos-sp-fem",
+          "title": "Women in Sports Ambassador",
+          "maxSelections": 1
+        }
+      ],
+      "eligibleDepartments": [],
+      "publishedAt": null,
+      "createdAt": "2026-10-31T06:57:33.570Z",
+      "updatedAt": "2026-10-31T06:57:33.570Z"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-elena",
+      "electionId": "elec-csu-2026",
+      "userId": "user-cand-1",
+      "name": "Elena Vance",
+      "photo": "/src/assets/images/candidate_elena_vance_1793428640086.jpg",
+      "department": "Computer Science & Engineering",
+      "semester": 6,
+      "studentId": "CS2023-0019",
+      "position": "President",
+      "manifesto": "Empowering students through transparent digital administration, 24/7 library access, subsidized textbook programs, and modernizing campus lab infrastructure. Every student deserves an amplified voice.",
+      "symbol": "⚡ Beacon of Progress",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "cand-marcus",
+      "electionId": "elec-csu-2026",
+      "userId": "user-cand-2",
+      "name": "Marcus Chen",
+      "photo": "/src/assets/images/candidate_marcus_chen_1793428641233.jpg",
+      "department": "Electronics & Communication",
+      "semester": 8,
+      "studentId": "EC2022-0450",
+      "position": "President",
+      "manifesto": "Strengthening mental health counseling on campus, increasing career fair diversity, establishing an alumni mentorship fund, and ensuring dining hall dietary inclusivity.",
+      "symbol": "🏛️ Unity & Action",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "cand-sarah",
+      "electionId": "elec-csu-2026",
+      "userId": "user-cand-3",
+      "name": "Sarah Jenkins",
+      "photo": "/src/assets/images/candidate_sarah_jenkins_1793428640873.jpg",
+      "department": "Information Technology",
+      "semester": 6,
+      "studentId": "IT2023-0105",
+      "position": "Vice President",
+      "manifesto": "Streamlined club budget approvals, zero-hassle auditorium bookings, and bi-weekly student town halls with academic deans.",
+      "symbol": "🌟 Forward Momentum",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "cand-david",
+      "electionId": "elec-csu-2026",
+      "userId": "user-cand-4",
+      "name": "David Okafor",
+      "photo": "",
+      "department": "Civil Engineering",
+      "semester": 6,
+      "studentId": "CE2023-0210",
+      "position": "Vice President",
+      "manifesto": "Renovating study rooms, eco-friendly campus transportation, and expanded inter-department collaborative competitions.",
+      "symbol": "🌿 Sustainable Campus",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "cand-priya",
+      "electionId": "elec-csu-2026",
+      "userId": "user-cand-5",
+      "name": "Priya Sharma",
+      "photo": "/src/assets/images/candidate_priya_sharma_1793428640467.jpg",
+      "department": "Mechanical Engineering",
+      "semester": 6,
+      "studentId": "ME2023-0774",
+      "position": "General Secretary",
+      "manifesto": "Publishing transparent union expenditure ledgers, digitizing grievance redressals within 48 hours, and modernizing student council records.",
+      "symbol": "📖 Transparency First",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "cand-lucas",
+      "electionId": "elec-csu-2026",
+      "userId": "user-cand-6",
+      "name": "Lucas Miller",
+      "photo": "",
+      "department": "Architecture & Design",
+      "semester": 4,
+      "studentId": "AR2024-0091",
+      "position": "Cultural Secretary",
+      "manifesto": "Revitalizing the annual Spring Carnival, securing renowned indie performers, and funding student film and digital art showcases.",
+      "symbol": "🎨 Campus Harmony",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-10-01T06:57:33.570Z",
+      "updatedAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "cand-past-1",
+      "electionId": "elec-drc-2025",
+      "userId": "user-past-cand-1",
+      "name": "Chloe DuPont",
+      "photo": "",
+      "department": "Computer Science & Engineering",
+      "semester": 8,
+      "studentId": "CS2022-0991",
+      "position": "Engineering Academic Delegate",
+      "manifesto": "Fair grading moderation and automated assignment evaluation timelines.",
+      "symbol": "⚖️ Equity in Grading",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-08-27T06:57:33.575Z",
+      "updatedAt": "2026-08-27T06:57:33.575Z"
+    },
+    {
+      "id": "cand-past-2",
+      "electionId": "elec-drc-2025",
+      "userId": "user-past-cand-2",
+      "name": "Arjun Mehta",
+      "photo": "",
+      "department": "Mechanical Engineering",
+      "semester": 8,
+      "studentId": "ME2022-0120",
+      "position": "Engineering Academic Delegate",
+      "manifesto": "Modernizing workshop safety equipment and hands-on capstone subsidies.",
+      "symbol": "⚙️ Hands-On Engineering",
+      "approvalStatus": "APPROVED",
+      "createdAt": "2026-08-27T06:57:33.575Z",
+      "updatedAt": "2026-08-27T06:57:33.575Z"
+    }
+  ],
+  "voterEligibility": [
+    {
+      "id": "elig-1",
+      "electionId": "elec-csu-2026",
+      "userId": "user-student-1",
+      "hasVoted": false,
+      "votedAt": null,
+      "createdAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "elig-2",
+      "electionId": "elec-csu-2026",
+      "userId": "user-student-2",
+      "hasVoted": true,
+      "votedAt": "2026-10-31T01:57:33.572Z",
+      "createdAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "elig-test-1",
+      "electionId": "test-elec-unique",
+      "userId": "test-user-unique",
+      "hasVoted": false,
+      "votedAt": null,
+      "createdAt": "2026-10-31T06:57:33.588Z"
+    }
+  ],
+  "ballots": [
+    {
+      "id": "ballot-seed-1",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-elena",
+      "position": "President",
+      "receiptHash": "7cf65c619368cbe9faa6adedd17e6a3c05f981a570fac6119e1efe0ed01e2de8",
+      "createdAt": "2026-10-31T01:57:33.573Z"
+    },
+    {
+      "id": "ballot-seed-2",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-sarah",
+      "position": "Vice President",
+      "receiptHash": "7cf65c619368cbe9faa6adedd17e6a3c05f981a570fac6119e1efe0ed01e2de8",
+      "createdAt": "2026-10-31T01:57:33.573Z"
+    },
+    {
+      "id": "ballot-seed-3",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-priya",
+      "position": "General Secretary",
+      "receiptHash": "7cf65c619368cbe9faa6adedd17e6a3c05f981a570fac6119e1efe0ed01e2de8",
+      "createdAt": "2026-10-31T01:57:33.573Z"
+    },
+    {
+      "id": "ballot-seed-4",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-lucas",
+      "position": "Cultural Secretary",
+      "receiptHash": "7cf65c619368cbe9faa6adedd17e6a3c05f981a570fac6119e1efe0ed01e2de8",
+      "createdAt": "2026-10-31T01:57:33.573Z"
+    },
+    {
+      "id": "ballot-dummy-pres-0",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-elena",
+      "position": "President",
+      "receiptHash": "2284b2e032b157cd2939f1ccdf7214032fee3b023c10efeca44d900a5e0b3a0a",
+      "createdAt": "2026-10-31T05:57:33.574Z"
+    },
+    {
+      "id": "ballot-dummy-vp-0",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-sarah",
+      "position": "Vice President",
+      "receiptHash": "2284b2e032b157cd2939f1ccdf7214032fee3b023c10efeca44d900a5e0b3a0a",
+      "createdAt": "2026-10-31T05:57:33.574Z"
+    },
+    {
+      "id": "ballot-dummy-pres-1",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-marcus",
+      "position": "President",
+      "receiptHash": "abc1bf75f702dd72be28dc23d6788df663dd1a35cbbf0478b3757e22694ebc08",
+      "createdAt": "2026-10-31T04:57:33.574Z"
+    },
+    {
+      "id": "ballot-dummy-vp-1",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-sarah",
+      "position": "Vice President",
+      "receiptHash": "abc1bf75f702dd72be28dc23d6788df663dd1a35cbbf0478b3757e22694ebc08",
+      "createdAt": "2026-10-31T04:57:33.574Z"
+    },
+    {
+      "id": "ballot-dummy-pres-2",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-elena",
+      "position": "President",
+      "receiptHash": "84bdf34f8116e28f30f6aafd4d1e62d788d6b5025ec3a173fc294e5adb93a005",
+      "createdAt": "2026-10-31T03:57:33.574Z"
+    },
+    {
+      "id": "ballot-dummy-vp-2",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-sarah",
+      "position": "Vice President",
+      "receiptHash": "84bdf34f8116e28f30f6aafd4d1e62d788d6b5025ec3a173fc294e5adb93a005",
+      "createdAt": "2026-10-31T03:57:33.574Z"
+    },
+    {
+      "id": "ballot-dummy-pres-3",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-marcus",
+      "position": "President",
+      "receiptHash": "b23ca25c9cf6b87f8b9d9f93b97f7db86c3f830791721d403d1b4d393b3d8ae8",
+      "createdAt": "2026-10-31T02:57:33.575Z"
+    },
+    {
+      "id": "ballot-dummy-vp-3",
+      "electionId": "elec-csu-2026",
+      "candidateId": "cand-sarah",
+      "position": "Vice President",
+      "receiptHash": "b23ca25c9cf6b87f8b9d9f93b97f7db86c3f830791721d403d1b4d393b3d8ae8",
+      "createdAt": "2026-10-31T02:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-0",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "430c02e48af7ba7f2410e63332a416b7516692c178c2a137140b250c6fe9d4e2",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-1",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "76e88b6f3e72725b3b54fc65958171a14d7fa9b100818296c425aa045113f2c6",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-2",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "f12b897d118c728f52bb009cace032303cc1ea7fc1b579dfef7945bb1d7bf50e",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-3",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "b4a8883220cebe974526bc099a6c41e0197b2c98c8c702de43cf723afc572eb8",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-4",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "742d0fd7e21966c3a1b16418045689ae3947737c2f3d793e77858d22aae6763e",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-5",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "eaf7fcf9af2b4f6c350833cee3862f05cc265a08355b95ece170c63171078e68",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-6",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "98088fc7a674bf514ae5f262172b780b2a446b13365df7e0df659bc499df1844",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-7",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "608b87aa85f41cf1473b6fb6b2fed714e89802a52a39053a9d7265ab8d84c3ff",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-8",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "8c7f6fa7ae678fc946baf323e1451a3b3d14c863f5447323a8c1412f557c94c0",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-9",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "3d136967334ad5f08eb500d263ab4192a8f0867fe83258397ec553b81bbf6bfe",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-10",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "6bddf28f8ec03aa2d9953cbc71a1282c75f6d2e981b003ff5ccd3cc5fd37c9aa",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-11",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "524eeec89afa38e99d6a81f1468b2ae5ab5bb34b6920c990d0ce93234caee065",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-12",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "d99fec52dd696833f5b1e784b898eccd741160c808ab12801fb545e4e312cdfb",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-13",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "6c779947d92c1bd9fb781e0fae3a9d22b4ed7bb9aa569e3a21b550c7258499e8",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-14",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "c461077f9aec772e44f0c537805d8776a5013a772b1692b441ed3cf024a6e026",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-15",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "33903ea3826d91f57a0e282cbf9d3a468ac8328d3dced99b37cef8a2094355be",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-16",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "2d5e7ad10ef99b09d0c2e438e635c213b010fe544654a96b99a010f194d3f7c8",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-17",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "a06fe29b0c2b299f626439f8056ab5ba1397f5a75fe7d27e45673356ee468e7e",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-18",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "aeb179db2607967cbbc40716ff59c9f968879a10b865eafc9c04ef5a629fc96e",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-19",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "98469183c3ab0a84c5e29b54141ec2ab8b2c0a919c07592814ccb9be4745474e",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-20",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "19b6d408b00d7e726b69c581d4c7792ea2749725126524651304ee4cc42224e2",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-21",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "35106825d3e8fce2ca150ef49c302335ccb110910e3e627fe8a8451520abf2da",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-22",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "56b01154b19d1c51d0c5338af2c064bc20ffda41a316f45adceba16951f9c928",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-23",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "f0606fb98b01875b162d7df04c7a9dd48a4cb7625d3c3ec1ecfce139d328b55e",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-24",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "8007e3c6f3c1de6bc7898358dc8ac347ef9a83b095f4234f6189fdafc9d25eb5",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-25",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "6d9938092415f41576f50bea344490a8e69bd65fd349d551a0201ed8510a4a17",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-26",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "0b491bfbb5ed48201543e76985f90653d02372b113a5d1edf1cca16fa94d3403",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-27",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-1",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "0ac507ddf68829d723577ed38a1e4898a70985ab36e720b78934b1fba2a8e996",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-28",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "1fae0ee8d4ed1ddb75999067a85e934209e7b98b6771681886db3cedadc504ae",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-29",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "267ae2418559554405ed492f9d86c750c318d6eb5a8a7aabbf53468999078062",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-30",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "7f6d025e134866c596f4c2b1d83456a82cc5ee4c9c8afe9585417f14170f6e90",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-31",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "897caec83c36d5658f01a0cefc8e4382cc5b0fa07673dadb9a8d3dc0b07b5691",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-32",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "caaf36374dd9f9c5a8227eca12470591ada0ffd0b380221d972266b744d0e8e6",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-33",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "019b80d25251129ba44e4a8191fcd2ce74359cdb262cfa1461debd08e08e2d38",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-34",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "31de6d5d4eb90080506aadc19ff55325fa4a35027e53c8767986cd1f1bca0592",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-35",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "d1c465cb2469e793132c02aea1414182b490028c5ae64ffab5ce6223cb685cea",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-36",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "71b72ef874792ffc7866693524144a68a46fdf4a3076cb87e2d1eb4758365366",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-37",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "506560b18be1d01050d5471b8afd5cea6ceaa0d53d72456e9fbb0d755ec59aa9",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-38",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "57a6e5d7ce5069cebbbf5c29a58c5bf90236a1c3292047686587a22c57f038e3",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-39",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "68740bdc6a002ba6b269b4d0b3d73e6aa8b56226999ee47957cf622293a8461c",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-40",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "601183b0e16e2e7ea8eba95c720d1668b97ed191a4092fef91c5ee2cef87593a",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    },
+    {
+      "id": "ballot-past-41",
+      "electionId": "elec-drc-2025",
+      "candidateId": "cand-past-2",
+      "position": "Engineering Academic Delegate",
+      "receiptHash": "07194dc989530b2de1e2953622a60b6c120d48afed083a03640d3caf6284f4c2",
+      "createdAt": "2026-09-03T06:57:33.575Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1",
+      "actorId": "user-admin-1",
+      "actorEmail": "admin@campus.edu",
+      "actorRole": "ADMIN",
+      "action": "ELECTION_CREATED",
+      "entityType": "ELECTION",
+      "entityId": "elec-csu-2026",
+      "details": {
+        "title": "College Student Union Election 2026",
+        "status": "ACTIVE"
+      },
+      "createdAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "log-2",
+      "actorId": "user-admin-1",
+      "actorEmail": "admin@campus.edu",
+      "actorRole": "ADMIN",
+      "action": "CANDIDATE_APPROVED",
+      "entityType": "CANDIDATE",
+      "entityId": "cand-elena",
+      "details": {
+        "candidateName": "Elena Vance",
+        "position": "President"
+      },
+      "createdAt": "2026-10-01T06:57:33.570Z"
+    },
+    {
+      "id": "log-3",
+      "actorId": "user-admin-1",
+      "actorEmail": "admin@campus.edu",
+      "actorRole": "ADMIN",
+      "action": "RESULTS_PUBLISHED",
+      "entityType": "ELECTION",
+      "entityId": "elec-drc-2025",
+      "details": {
+        "title": "Department Representatives Council 2025",
+        "totalBallots": 42
+      },
+      "createdAt": "2026-09-04T06:57:33.575Z"
+    }
+  ],
+  "emailTokens": [
+    {
+      "id": "token-freshman-1",
+      "userId": "user-student-3",
+      "tokenHash": "0cb768072a27e51414cd81f7d55bf7242009fead480b1edac03a45fe3cbdc94b",
+      "code": "123456",
+      "expiresAt": "2026-11-01T06:57:33.571Z",
+      "usedAt": null,
+      "createdAt": "2026-10-31T06:57:33.570Z"
+    }
+  ],
+  "passwordResetTokens": [],
+  "sessions": []
+}

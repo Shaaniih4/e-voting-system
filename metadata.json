@@ -1,0 +1,6 @@
+{
+  "name": "E-Vote Campus",
+  "description": "Your Voice. Your Vote. Your Campus. A secure, modern college electronic voting system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
